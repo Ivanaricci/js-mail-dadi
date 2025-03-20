@@ -42,16 +42,38 @@ else(
 // Altrimenti perde
 
 
-let numUser = prompt('inserisci un numero da 1 a 6')
 
-let numRandom = Math.floor(Math.random() * 6 ) +1
-console.log(numRandom)
+let numUser = Math.floor(Math.random() * 6 ) +1
+let nameUser = 'Giocatore1'
+console.log(numUser +' '+ nameUser)
 
-for(let i=1; i<=6; i++){
-    if(numUser<numRandom)
+let numMachine = Math.floor(Math.random() * 6 ) +1
+let nameMachine = 'Computer'
+console.log(numMachine +' '+ nameMachine)
+
+for(i=1; i<=6; i++){
+    if(numUser<numMachine){
         console.log('Hai perso')
-
-    else(
+    }
+    else if(numUser>numMachine){
         console.log('Hai vinto')
+    }
+    else(
+        console.log('Pareggio')
     )
 }
+
+
+// let numUser = prompt('inserisci un numero da 1 a 6')
+
+// let numRandom = Math.floor(Math.random() * 6 ) +1
+// console.log(numRandom)
+
+// for(let i=1; i<=6; i++){
+//     if(numUser<numRandom)
+//         console.log('Hai perso')
+
+//     else(
+//         console.log('Hai vinto')
+//     )
+// }
