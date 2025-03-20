@@ -31,3 +31,27 @@ else(
 )
 
 
+
+// Gioco dei dadi
+// Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
+// Prima di partire a scrivere codice poniamoci qualche domanda: Che ci sia un array da qualche parte? Se dobbiamo confrontare qualcosa che "cosa" ci serve?
+
+// Un prompt per l'utente (per inserire il numero)
+// Un prompt random della macchina (che generi un numero random)
+// Se il numero dell'utente è più alto di quello della macchina vince
+// Altrimenti perde
+
+
+let numUser = prompt('inserisci un numero da 1 a 6')
+
+let numRandom = Math.floor(Math.random() * 6 ) +1
+console.log(numRandom)
+
+for(let i=1; i<=6; i++){
+    if(numUser<numRandom)
+        console.log('Hai perso')
+
+    else(
+        console.log('Hai vinto')
+    )
+}
